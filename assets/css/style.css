@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.bg-yellow {
+    background-color: #F6E300;
+}
+
+.heading {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 97px;
+}
+
+.heading1 {
+    color: #000;
+    font-family: 'Poppins' sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.t1 {
+    color: #000;
+    font-family: ' Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main-timeline {
+    position: relative;
+}
+
+.main-timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: red;
+    top: 17px;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 36.03px;
+    height: 36.03px;
+    right: -18px;
+    background-color: white;
+    top: -8px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+}
+
+.right {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+}
+
+.right::after {
+    left: -18px;
+}
+
+.burger1 {
+    position: absolute;
+    top: 20px;
+    left: 262px;
+}
+
+.burger2 {
+    position: absolute;
+    top: 92px;
+    right: 60px;
+}
+
+.burger3 {
+    position: absolute;
+    top: 67px;
+    left: 3px;
+}
+
+.burger4 {
+    position: absolute;
+    top: 216px;
+    right: 260px;
+
+}
+
+.burger5 {
+    position: absolute;
+    top: 380px;
+    left: 100px;
+}
+
+.burger6 {
+    position: absolute;
+    bottom: 195px;
+    left: -6px
+}
+
+.burger7 {
+    position: absolute;
+    bottom: 40px;
+    right: 416px;
+}
+
+.burger8 {
+    position: absolute;
+    right: 76px;
+    bottom: 12px;
+}
+
+@media (max-width:767.99px) {
+    .timeline::after {
+        content: "";
+        position: absolute;
+        width: 36.03px;
+        height: 36.03px;
+        right: -18px;
+        background-color: white;
+        top: -11px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-timeline::after {
+        left: 31px;
+    }
+
+
+    .timeline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .left::after,
+    .right::after {
+        left: 13px;
+    }
+
+    .left::before {
+        right: auto;
+    }
+
+    .right {
+        left: 0%;
+    }
+}
